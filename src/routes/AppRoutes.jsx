@@ -18,7 +18,25 @@ import SaleRack from '../features/superadmin/pages/SaleRack';
 import BuyBack from '../features/superadmin/pages/BuyBack';
 import InspectionResult from '../features/superadmin/pages/InspectionResult';
 import PaymentRejection from '../features/superadmin/pages/PaymentRejection';
-import BookingSchedule from '../features/superadmin/pages/BookingSchedule/';
+import BookingSchedule from '../features/superadmin/pages/BookingSchedule';
+import EngineerAllocation from '../features/superadmin/pages/EngineerAllocation';
+import ViedoLog from '../features/superadmin/pages/ViedoLog';
+import AllTickets from '../features/superadmin/pages/AllTickets';
+import SlaTimer from '../features/superadmin/pages/SlaTimer';
+import Escalations from '../features/superadmin/pages/Escalations';
+import Rack from '../features/superadmin/pages/Rack';
+import SlotOverview from '../features/superadmin/pages/SlotOverview';
+import Move from '../features/superadmin/pages/Move';
+import AddEngineer from '../features/superadmin/pages/AddEngineer';
+import AssignmentLogs from '../features/superadmin/pages/AssignmentLogs';
+import WorkHistory from '../features/superadmin/pages/WorkHistory';
+import GenerateQR from '../features/superadmin/pages/GenerateQR';
+import ScanLogs from '../features/superadmin/pages/ScanLogs';
+import RepairReport from '../features/superadmin/pages/RepairReport';
+import FinancialReport from '../features/superadmin/pages/FinancialReport';
+import RackUtilization from '../features/superadmin/pages/RackUtilization';
+import AppointmentSummary from '../features/superadmin/pages/AppointmentSummary';
+import ExportData from '../features/superadmin/pages/ExportData';
 
 // Placeholder Component
 const Placeholder = ({ title }) => <div className="p-3">{title}</div>;
@@ -66,34 +84,34 @@ const AdminRoutes = () => {
 
         {/* Appointment Center */}
         <Route path="booking-schedule" element={<BookingSchedule/>} />
-        <Route path="engineer-allocation" element={<Placeholder title="Engineer Allocation" />} />
-        <Route path="video-logs" element={<Placeholder title="Video Call Logs" />} />
+        <Route path="engineer-allocation" element={<EngineerAllocation />} />
+        <Route path="video-logs" element={<ViedoLog/>} />
 
         {/* Ticketing & Support */}
-        <Route path="tickets" element={<Placeholder title="All Tickets" />} />
-        <Route path="sla-timers" element={<Placeholder title="SLA Timers" />} />
-        <Route path="escalations" element={<Placeholder title="Escalations" />} />
+        <Route path="tickets" element={<AllTickets />} />
+        <Route path="sla-timers" element={<SlaTimer />} />
+        <Route path="escalations" element={<Escalations/>} />
 
         {/* Rack Management */}
-        <Route path="rack-abc" element={<Placeholder title="Rack A, B, C" />} />
-        <Route path="slot-overview" element={<Placeholder title="Slot Overview" />} />
-        <Route path="move-items" element={<Placeholder title="Move/Update Items" />} />
+        <Route path="rack-abc" element={<Rack/>} />
+        <Route path="slot-overview" element={<SlotOverview/>} />
+        <Route path="move-items" element={<Move/>} />
 
         {/* Engineer Panel */}
-        <Route path="engineers" element={<Placeholder title="Add/View Engineers" />} />
-        <Route path="assignment-logs" element={<Placeholder title="Assignment Logs" />} />
-        <Route path="work-history" element={<Placeholder title="Work History" />} />
+        <Route path="engineers" element={<AddEngineer/>} />
+        <Route path="assignment-logs" element={<AssignmentLogs/>} />
+        <Route path="work-history" element={<WorkHistory/>} />
 
         {/* QR & Tracking */}
-        <Route path="generate-qr" element={<Placeholder title="Generate New QR" />} />
-        <Route path="scan-logs" element={<Placeholder title="Scan Logs" />} />
+        <Route path="generate-qr" element={<GenerateQR />} />
+        <Route path="scan-logs" element={<ScanLogs/>} />
 
         {/* Reports */}
-        <Route path="repair-reports" element={<Placeholder title="Repair Reports" />} />
-        <Route path="financial-reports" element={<Placeholder title="Financial Reports" />} />
-        <Route path="rack-utilization" element={<Placeholder title="Rack Utilization" />} />
-        <Route path="appointment-summary" element={<Placeholder title="Appointment Summary" />} />
-        <Route path="export-data" element={<Placeholder title="Export Data (CSV/PDF)" />} />
+        <Route path="repair-reports" element={<RepairReport />} />
+        <Route path="financial-reports" element={<FinancialReport/>} />
+        <Route path="rack-utilization" element={<RackUtilization/>} />
+        <Route path="appointment-summary" element={<AppointmentSummary/>} />
+        <Route path="export-data" element={<ExportData />} />
 
         {/* Settings */}
         <Route path="kyc-config" element={<Placeholder title="KYC Config" />} />
