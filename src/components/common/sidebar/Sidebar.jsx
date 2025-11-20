@@ -113,6 +113,7 @@ const Sidebar = () => {
       {/* Engineer Panel */}
       <SidebarGroup icon={Users} label="Engineer Panel">
         <SidebarItem icon={HelpCircle} label="Add/View Engineers" path="/admin/engineers" />
+        <SidebarItem icon={HelpCircle} label="Add/View Counter Man" path="/admin/add-counter-man" />
         <SidebarItem icon={HelpCircle} label="Assignment Logs" path="/admin/assignment-logs" />
         {/* <SidebarItem icon={HelpCircle} label="Work History" path="/admin/work-history" /> */}
       </SidebarGroup>

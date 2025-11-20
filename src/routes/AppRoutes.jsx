@@ -42,6 +42,7 @@ import NotApprovedProducts from '../features/superadmin/pages/NotApprovedProduct
 import AllProducts from '../features/superadmin/pages/AllProducts';
 import PackedProducts from '../features/superadmin/pages/PackedProducts';
 import DeliveredProducts from '../features/superadmin/pages/DeliveredProducts';
+import AddCounterMan from '../features/superadmin/pages/AddCounterMan';
 
 // Placeholder Component
 const Placeholder = ({ title }) => <div className="p-3">{title}</div>;
@@ -93,6 +94,7 @@ const AdminRoutes = () => {
         {/* Appointment Center */}
         <Route path="booking-schedule" element={<BookingSchedule/>} />
         <Route path="engineer-allocation" element={<EngineerAllocation />} />
+        <Route path="add-counter-man" element={<AddCounterMan/>} />
         <Route path="video-logs" element={<ViedoLog/>} />
 
         {/* Ticketing & Support */}
